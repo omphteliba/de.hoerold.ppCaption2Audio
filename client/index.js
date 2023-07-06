@@ -1,7 +1,7 @@
 var csInterface = new CSInterface();
 
 function openTab(tabId) {
-    var tabs = document.getElementsByClassName('tab');
+    var tabs = document.getElementsByClassName('panel-content');
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].style.display = 'none';
     }
