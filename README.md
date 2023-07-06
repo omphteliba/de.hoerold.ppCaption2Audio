@@ -1,6 +1,6 @@
-# de.hoerold.ppCaption2Audio
-
 # ppCaption2Audio
+
+![ppCaption2Audio Logo](./assets/oliver_hoerold_Imagine_a_title_image_that_creatively_represents_149b906c-6846-4293-b3f0-84cfdf0c4a49.png)
 
 Greetings! Welcome to the jumble of code we like to call 'ppCaption2Audio'. I'm glad to see your brave spirit has led you here! Don't worry, it's not as bad as it sounds. I mean, I'm still here, right? ... Right?
 
