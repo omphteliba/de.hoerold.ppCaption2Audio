@@ -20,6 +20,17 @@ ppCaption2Audio is like the Babel fish from Hitchhiker's Guide to the Galaxy. Ex
 
 1. **Download and Install**: Click on the download button (if you can't find it, your adventure ends here) and follow the prompts to install. You may have to click 'Next' more than once (our condolences for the hard work).
 
+Here are the paths where you should install the extension:
+
+   #### System extension folder
+   - **Win(x86)**: `C:\Program Files\Common Files\Adobe\CEP\extensions`
+   - **Win(x64)**: `C:\Program Files (x86)\Common Files\Adobe\CEP\extensions`, and `C:\Program Files\Common Files\Adobe\CEP\extensions` (since CEP 6.1)
+   - **Mac**: `/Library/Application Support/Adobe/CEP/extensions`
+   
+   #### Per-user extension folder
+   - **Win**: `C:\Users\<USERNAME>\AppData\Roaming\Adobe\CEP/extensions`
+   - **Mac**: `~/Library/Application Support/Adobe/CEP/extensions`
+
 2. **Choose Your Caption**: Open your project in Adobe Premiere Pro, select your caption file, take a deep breath, and pray to the code gods that everything goes as expected.
 
 3. **Translate and Generate**: Select the target language and press 'Translate'. The audio track will be generated faster than you can say "Open-source code is a beautiful disaster". And voila! Your silent film now has sound, in a language possibly different from the original one. 
