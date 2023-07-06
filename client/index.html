@@ -3,12 +3,32 @@
 <head>
     <meta charset="utf-8">
     <title>Caption2Audio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    /* Simple HTML UI elements to get us started. */
-    <h1>Your first panel in 6 easy steps</h1>
-    <button id="open-button">Open</button>
-    /* Add your script dependencies here. */
+    <h1>ppCaption2Audio</h1>
+    <div id="tabs">
+        <div class="tab" onclick="openTab('config')">Configuration</div>
+        <div class="tab" onclick="openTab('translate')">Translation</div>
+        <div class="tab" onclick="openTab('help')">Help</div>
+    </div>
+    <div id="config" class="hidden panel-content">
+        <form id="config-form">
+            <label for="language">Language:</label>
+            <select id="language">
+                <option value="english">English</option>
+                <option value="german">German</option>
+            </select>
+            <label for="deepl-key">DeepL API Key:</label>
+            <input type="text" id="deepl-key">
+            <label for="11labs-key">11Labs API Key:</label>
+            <input type="text" id="11labs-key">
+            <button type="button" onclick="saveSettings()">Save Settings</button>
+        </form>
+    </div>
+    <div id="translate" class="hidden panel-content">Translation content goes here.</div>
+    <div id="help" class="hidden panel-content">Help content goes here.</div>
+
     <script type="text/javascript" src="CSInterface.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>

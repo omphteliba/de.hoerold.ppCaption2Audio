@@ -1,0 +1,241 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: #333;
+    margin: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .body-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  a {
+    line-height: 2em;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  button
+  {
+    border:2px solid;
+      height:20px;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      line-height: 12px;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  
+  input {
+    border:1px solid;
+  }
+  
+  input[type=text], input[type=password] {
+      padding:2px 4px;
+  }
+  
+  #content {
+    margin-right:auto;
+    margin-left:auto;
+    vertical-align:middle;
+    width:100%;
+  }
+  
+  #content ul {
+    padding:0px;
+  }
+  
+  #content ul li {
+    margin:3px 0px 3px 0px;
+  }
+  
+  
+  .wide {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .placeholder {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .mb10 {
+    margin-bottom: 10px;
+  }
+  
+  .mb20 {
+    margin-bottom: 20px;
+  }
+  
+  .ml30 {
+    margin-left: 30px;
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tx-center {
+    text-align: center;
+  }
+  
+  .loader {
+      border: 5px solid #555; /* Light grey */
+      border-top: 5px solid white; /* Blue */
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 2s linear infinite;
+      -webkit-animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+  .progress-outer {
+      width: 200px;
+      background-color: #555;
+  }
+  
+  .progress-inner {
+      width: 0%;
+      height: 5px;
+      background-color: white;
+  }
+  
+  table {
+    border: 0px;
+  }
+  
+  table div.long-string {
+    word-break: break-all;
+  }
+  
+  .warning {
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 3px;
+  }
+  
+  .critical {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  
+  .tabs {
+    margin-bottom: 10px;
+  }
+  
+  .tab {
+    margin-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+    cursor: default;
+  }
+  
+  
+  .tab.active {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+  }
+  
+  .panel-content {
+    background: rgba(0, 0, 0, 0.12);
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 10px;
+  }
+  
+  .float-right {
+    float:right;
+  }
+  
+  #tab-refresh {
+    width: 20px;
+    height: 16px;
+  }
+  
+  div.md-select {
+    width: calc(100% - 30px);
+  }
+  
+  svg {
+    fill: white;
+  }
+  
+  
+  /*
+    Tooltip:
+    The specific chromium version of Adobe has a bug on MacOS, so that the
+    title attribute is not shown as tooltip.
+    Therefore we have to create a tooltip manually in CSS.
+  */
+  
+  .tooltip{
+      display: inline;
+      position: relative;
+  }
+  .tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.85);
+    border-radius: 5px;
+    bottom: 30px;
+    color: rgb(222, 222, 222);
+    content: attr(title);
+    left: 0%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 140pt;
+    text-align: center;
+  }
+  
+  .tooltip-right{
+      display: inline;
+      position: relative;
+  }
+  .tooltip-right:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.85);
+    border-radius: 5px;
+    bottom: 30px;
+    color: rgb(222, 222, 222);
+    content: attr(title);
+    right: 0%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 140pt;
+    text-align: center;
+  }
+  
