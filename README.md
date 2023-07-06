@@ -16,6 +16,40 @@ ppCaption2Audio is like the Babel fish from Hitchhiker's Guide to the Galaxy. Ex
 
 3. **Adobe Premiere Pro Integration**: We managed to make our code play nicely with Adobe's. We're not sure how, but it's probably magic.
 
+
+## How It Works
+
+Our sophisticated system of very technical wizardry follows a rigorous 9-step process to ensure that your captions are not just translated, but transformed into high-quality audio:
+
+1. **Select the language**: Choose the language for the final audio. We offer a wide selection. Yes, even Klingon (well, not really, but we're working on it).
+
+2. **Select the sequence**: Choose the sequence that contains the caption you want to translate.
+
+3. **Choose your caption**: If your sequence is like a novel with multiple captions, choose the one you want to translate.
+
+4. **Export the caption**: We'll help you export the caption as an SRT file. This may sound complex, but we promise it's as easy as pie (and just as satisfying).
+
+5. **Translate with DeepL**: Our tool uses DeepL to translate the caption into your chosen language. Yes, it's DeepL, as in "Deep Learning", not "Deep Sea Diving".
+
+6. **Save the translated caption**: The translated caption is saved. Somewhere safe, we promise. 
+
+7. **Chop it up by timecode**: We then slice and dice the translated caption by timecode. Don't worry, no captions were harmed in the making of this software.
+
+8. **Generate new audio with 11labs**: The chopped up captions are sent to 11labs (not a secret government facility, but an AI speech synthesis system) to generate the new audio.
+
+9. **Insert new audio into Premiere Pro sequence**: The new audio snippets are inserted into the Premiere Pro sequence at the exact timecode of the original caption. Voilà, your sequence can now speak a new language!
+
+## Configuration
+
+Before using ppCaption2Audio, you'll need to provide the following API keys:
+
+- **DeepL API Key**: Required to communicate with the DeepL Translation system.
+- **11labs API Key**: Needed for the 11labs text-to-speech system.
+
+Don't worry, we've made the process of adding these keys as simple as possible. Just follow the prompts when you first run the application.
+
+All temporary files created during the translation and audio creation process are conveniently saved in a `ppcaption2audio` folder in your user's Documents folder. We'll even create subfolders by date and sequence name to keep things organized for you. Because who doesn't love a bit of order in the chaos?
+
 ## How to Use
 
 1. **Download and Install**: Click on the download button (if you can't find it, your adventure ends here) and follow the prompts to install. You may have to click 'Next' more than once (our condolences for the hard work).
