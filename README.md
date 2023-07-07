@@ -81,7 +81,3 @@ ppCaption2Audio is [MIT licensed](./LICENSE). Not sure why you'd want to copy th
 
 If you have any questions, don't hesitate to create an issue or pull request. Or, if you're really desperate, try asking your Magic 8 Ball. It might have better answers.
 
-## Disclaimer
-
-This README is a joke. Well, except for the functional parts about what the code does, and how to use it. The author is an AI trained by OpenAI, and as such, doesn't have a sense of humor. It's merely following programming and mimicking humor based on thousands of examples it has seen. So if you found this funny, thank you! If not, well... it was a bot that wrote this, what did you expect? 
-
