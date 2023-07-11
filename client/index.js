@@ -95,7 +95,7 @@ window.onload = function() {
                  "    'Error: ' + error.toString();" +
                  "}";
 
-    csInterface.evalScript(script, function(result) {
+/*     csInterface.evalScript(script, function(result) {
         if (result.startsWith('Error:')) {
             console.log(result); // Log the error
         } else {
@@ -111,7 +111,7 @@ window.onload = function() {
                 document.getElementById('11labs-key').value = decrypt(settings.labs11Key);
             }
         }
-    });
+    }); */
 
     // Populate the sequences when the page loads
     refreshSequences();

@@ -17,7 +17,7 @@ function getSequencesWithCaptions() {
             // iterate over all clips in the track
             for(var k = 0; k < track.clips.numItems; k++) {
                 var clip = track.clips[k];
-                
+                $.writeln("The sequence name is: " + clip.name);
                 // check if the clip has captions
                 if(clip.hasCaptions) {
                     sequences.push(sequence.name);
