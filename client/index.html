@@ -54,7 +54,13 @@
                 </table>
             </form>
         </div>
-        <div id="translate" class="panel-content">Translation content goes here.</div>
+        <div id="translate" class="panel-content">
+            <label for="sequences">Choose a sequence:</label>
+            <select name="sequences" id="sequences">
+                <!-- Options will be populated dynamically -->
+            </select>
+            <button id="refresh">Refresh</button>
+        </div>
         <div id="help" class="hidden panel-content">Help content goes here.</div>
     </div>
     <script src="lib/Appearance.js"></script>

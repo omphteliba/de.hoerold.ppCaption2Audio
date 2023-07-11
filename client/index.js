@@ -52,6 +52,34 @@ function saveSettings() {
     });
 }
 
+function refreshSequences() {
+    // Load the CSInterface library
+    var csInterface = new CSInterface();
+
+    // Call the ExtendScript function
+    var script = 'getSequencesWithCaptions()';
+    csInterface.evalScript(script, function(result) {
+        // Parse the result into an array
+        var sequencesWithCaptions = JSON.parse(result);
+
+        // Get the select element
+        var select = document.getElementById('sequences');
+
+        // Remove any existing options
+        while (select.firstChild) {
+            select.firstChild.remove();
+        }
+
+        // Add an option for each sequence
+        sequencesWithCaptions.forEach(function(name) {
+            var option = document.createElement('option');
+            option.value = name;
+            option.textContent = name;
+            select.appendChild(option);
+        });
+    });
+}
+
 window.onload = function() {
     var script = "try {" +
                  "    var folder = new Folder('~/Documents/ppCaption2Audio');" +
@@ -84,4 +112,10 @@ window.onload = function() {
             }
         }
     });
+
+    // Populate the sequences when the page loads
+    refreshSequences();
+
+    // Also populate the sequences when the refresh button is clicked
+    document.getElementById('refresh').addEventListener('click', refreshSequences);
 };
